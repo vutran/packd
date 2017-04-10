@@ -1,6 +1,7 @@
 const fs = require( 'fs' );
 const readline = require( 'readline' );
 const express = require( 'express' );
+const cors = require('cors');
 const compression = require( 'compression' );
 const prettyBytes = require( 'pretty-bytes' );
 const favicon = require( 'serve-favicon' );
@@ -14,6 +15,7 @@ const { root, tmpdir } = require( '../config.js' );
 
 const app = express();
 
+app.use( cors() );
 app.use( favicon( `${root}/public/favicon.ico` ) );
 app.use( compression() );
 

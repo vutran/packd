@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Rich-Harris/packd#readme",
   "dependencies": {
     "browserify": "^14.1.0",
+    "cors": "^2.8.3",
     "express": "^4.15.2",
     "is-module": "^1.0.0",
     "lru-cache": "^4.0.2",
